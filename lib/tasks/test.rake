@@ -16,7 +16,7 @@ namespace :ahoy_email do
       end
       
       x.report('tracking click, not open (deliver_now)') do
-        TestWorker.new.perform(args[:email_count], args[:link_count], true, false, false)
+        TestWorker.new.perform(args[:email_count], args[:link_count], false, false, true)
       end
 
       x.report('tracking neither open or click (deliver_now)') do

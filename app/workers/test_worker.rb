@@ -17,6 +17,7 @@ class TestWorker
       else
         email.deliver_now
       end
+      sleep(delay.to_i) if delay
     end
     `rm -rf #{Rails.root}/tmp/emails`
   end

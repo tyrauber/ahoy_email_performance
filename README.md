@@ -14,28 +14,36 @@ The rake task measures 3 things:
 ```
 Warming up --------------------------------------
 tracking open and click (deliver_now)
-                         1.000  i/100ms
+                    ["1000", "50"]
+     1.000  i/100ms
 tracking open, not click (deliver_now)
-                         1.000  i/100ms
+                    ["1000", "50"]
+     1.000  i/100ms
 tracking click, not open (deliver_now)
-                         1.000  i/100ms
+                    ["1000", "50"]
+     1.000  i/100ms
 tracking neither open or click (deliver_now)
-                         1.000  i/100ms
+                    ["1000", "50"]
+     1.000  i/100ms
 Calculating -------------------------------------
 tracking open and click (deliver_now)
-                          0.009  (± 0.0%) i/s -      1.000  in 108.925723s
+                    ["1000", "50"]
+      0.008  (± 0.0%) i/s -      1.000  in 120.374585s
 tracking open, not click (deliver_now)
-                          0.036  (± 0.0%) i/s -      1.000  in  27.761011s
+                    ["1000", "50"]
+      0.038  (± 0.0%) i/s -      1.000  in  26.370108s
 tracking click, not open (deliver_now)
-                          0.052  (± 0.0%) i/s -      1.000  in  19.280258s
+                    ["1000", "50"]
+      0.009  (± 0.0%) i/s -      1.000  in 107.485126s
 tracking neither open or click (deliver_now)
-                          0.044  (± 0.0%) i/s -      1.000  in  22.701992s
+                    ["1000", "50"]
+      0.043  (± 0.0%) i/s -      1.000  in  23.309296s
 
 Comparison:
-tracking click, not open (deliver_now):        0.1 i/s
-tracking neither open or click (deliver_now):  0.0 i/s - 1.18x slower
-tracking open, not click (deliver_now):        0.0 i/s - 1.44x slower
-tracking open and click (deliver_now):         0.0 i/s - 5.65x slower
+tracking neither open or click (deliver_now):        0.0 i/s
+tracking open, not click (deliver_now):        0.0 i/s - 1.13x slower
+tracking click, not open (deliver_now):        0.0 i/s - 4.61x slower
+tracking open and click (deliver_now):        0.0 i/s - 5.16x slower
 ```
 
 ## Instructions
